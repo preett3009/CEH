@@ -1,0 +1,142 @@
+CHAPS (Hardening Assessment PowerShell Script) Assignment Report
+Prepared by: Sanket Singh
+Date: 22-02-2024
+Client: XYZ Corporation Executive Summary:
+The CHAPS assessment was conducted on the systems belonging to XYZ Corporation to evaluate their security posture and identify potential vulnerabilities. This report provides an overview of the findings and recommendations for improving the security of the systems.
+Assessment Overview:
+The assessment covered the following areas:
+
+1.	Windows Auto Update Configuration
+2.	Missing Windows Patches
+3.	BitLocker Encryption
+4.	PowerShell Auditing and Logging
+5.	Event Logs Configuration
+6.	PowerShell Version 2 Permission
+7.	Local Administrator Accounts
+8.	SMBv1
+9.	Credential Guard and Device Guard
+10.	NTLM Session Security Settings
+
+
+Security Settings and Configurations:
+1.	Windows AutoUpdate Configuration:
+o	Status: Windows AutoUpdate is set to 4.
+o	Recommendation: Ensure that Windows AutoUpdate is configured to automatically download and install updates.
+
+2.	Missing Windows Patches:
+o	Status: Missing Critical or Important Update KB: 5034441.
+o	Recommendation: Install the missing patches immediately to address known vulnerabilities.
+
+3.	BitLocker Encryption:
+o	Status: BitLocker not detected.
+o	Recommendation: Enable BitLocker to protect sensitive data on the system.
+
+4.	PowerShell Auditing and Logging:
+o	Status: Multiple PowerShell settings related to auditing and logging are not enabled.
+o	Recommendation: Enable PowerShell auditing and logging to monitor and track PowerShell activities.
+
+5.	Event Logs Configuration:
+o	Status: Event logs settings defaults are too small.
+o	Recommendation: Increase the max sizes for event logs to ensure adequate logging capacity.
+
+6.	PowerShell Version 2 Permission:
+o	Status: PowerShell Version 2 is not permitted.
+o	Recommendation: Ensure that PowerShell Version 2 is not permitted to run on the system to prevent potential security risks.
+
+7.	Local Administrator Accounts:
+o	Status: More than one account is in the local Administrators group.
+o	Recommendation: Limit the number of accounts in the local Administrators group to reduce the risk of unauthorized access.
+
+8.	SMBv1:
+o	Status: SMBv1 is enabled.
+o	Recommendation: Disable SMBv1 to mitigate potential security vulnerabilities.
+
+9.	Credential Guard and Device Guard:
+o	Status: Both Credential Guard and Device Guard are not detected.
+o	Recommendation: Enable Credential Guard and Device Guard to enhance system security.
+
+10.	NTLM Session Security Settings:
+o	Status: NTLM Session Server and Client Security settings are not configured to require NTLMv2 and 128-bit encryption.
+o	Recommendation: Configure NTLM Session Server and Client Security settings to require NTLMv2 and 128-bit encryption to enhance security.
+
+Conclusion:
+The CHAPS assessment identified that the system has several security configurations and settings that need to be addressed to improve its security posture. Implementing the recommended changes will help mitigate potential vulnerabilities and enhance the overall security of the system. This concludes the CHAPS Hardening Assessment Report for XYZ Corporation.
+Snap Shots
+
+ 
+ 
+ 
+
+Internship Assessment for h1k0r ceh Internships Week 1 
+Topic: CHAPS Configuration Hardening Assessment PowerShell Script (CHAPS) Instructions: 
+ 
+Read and understand the purpose of CHAPS Configuration Hardening Assessment PowerShell Script (CHAPS). 
+Read and understand the PowerShell script provided. 
+Answer the following questions based on your understanding of CHAPS and the PowerShell script. 
+ 
+Assessment Questions: 
+ 
+1.	What is CHAPS? 
+a.	A PowerShell script for assessing the configuration hardening of Windows machines. 
+b.	An antivirus software for Windows machines. 
+c.	A tool for encrypting files on Windows machines. 
+d.	A remote desktop access software for Windows machines. 
+ 
+2.	What is the purpose of CHAPS? 
+a.	To provide an automated way to assess the configuration hardening of Windows machines. 
+b.	To perform system backups on Windows machines. 
+c.	To scan for and remove malware on Windows machines. 
+d.	To remotely access and control Windows machines. 
+ 
+3.	What are some of the security settings assessed by CHAPS? 
+a.	Password policy settings, local security policy settings, and user rights assignments. 
+b.	Internet connectivity settings, system update settings, and firewall settings. 
+c.	Installed software settings, system configuration settings, and network share settings. 
+d.	Disk encryption settings, user account settings, and virtual machine settings. 
+ 
+4.	How does CHAPS assess the security settings of Windows machines? 
+a.	By querying the Windows registry and security policy settings. 
+b.	By running a full system scan for viruses and malware. 
+c.	By checking the status of installed software and applications. 
+d.	By analyzing network traffic and firewall logs.  
+ 
+5.	What is the output of CHAPS? 
+a.	A report in CSV format that lists the security settings assessed and their status (enabled/disabled). 
+b.	A log file that lists all the files scanned and their status (infected/clean). 
+c.	A list of installed software and their versions. 
+d.	A list of all network devices connected to the Windows machine. 
+ 
+6.	How can CHAPS be useful in a corporate environment? 
+a.	It can help identify security vulnerabilities and assist in hardening the configuration of Windows machines. 
+b.	It can be used to remotely access and control Windows machines, making it easier for IT administrators to manage their systems. 
+c.	It can help monitor and track the software usage on Windows machines. 
+d.	It can be used to scan for and remove malware on Windows machines. 
+ 
+7.	What are some limitations of CHAPS? 
+a.	It only assesses security settings related to configuration hardening and does not perform vulnerability scanning or penetration testing. 
+b.	It can only be run on Windows machines running PowerShell version 5.1 or later. 
+c.	It requires administrative privileges to run. 
+d.	It may generate false positives or false negatives, depending on the system configuration. 
+ 
+8.	What are some ways to improve CHAPS? 
+a.	Add support for assessing security settings on Linux and macOS machines. 
+b.	Add support for vulnerability scanning and penetration testing. 
+c.	Improve the accuracy of the assessments to minimize false positives and false negatives. 
+d.	Provide an automated way to remediate security vulnerabilities found during the assessment. 
+ 
+9.	What are some alternatives to CHAPS? 
+a.	Microsoft Baseline Security Analyzer (MBSA) 
+b.	Nessus Vulnerability Scanner 
+c.	OpenVAS 
+d.	Qualys Guard Vulnerability Management 
+ 
+10.	In your opinion, how useful do you think CHAPS is for assessing the configuration hardening of Windows machines? Why? 
+
+Ans:  CHAPS (Cryptographic Hardware and Protocols Service) is a Microsoft service that provides a secure environment for cryptographic operations. It is designed to enhance the security of cryptographic operations by ensuring that cryptographic keys are never exposed to software or to the operating system. This is particularly important in environments where sensitive data is handled, such as financial institutions or government agencies.
+For assessing the configuration hardening of Windows machines, CHAPS can be quite useful for several reasons:
+1.	Enhanced Security for Cryptographic Operations: CHAPS ensures that cryptographic operations are performed in a secure manner, reducing the risk of key exposure. This is crucial for maintaining the integrity and confidentiality of sensitive data.
+2.	Compliance with Security Standards: By using CHAPS, organizations can demonstrate compliance with various security standards that require secure handling of cryptographic keys. This can be particularly important for industries with strict regulatory requirements, such as finance or healthcare.
+3.	Reduced Risk of Cryptographic Attacks: By isolating cryptographic operations from the rest of the system, CHAPS helps to reduce the risk of cryptographic attacks. This is because attackers would need to compromise the secure environment in which cryptographic operations are performed, which is significantly more difficult than compromising the operating system or application code.
+4.	Simplified Management of Cryptographic Keys: CHAPS provides a centralized management solution for cryptographic keys, making it easier to implement and enforce key management policies. This can help to ensure that keys are securely generated, stored, and used.
+5.	Support for Hardware Security Modules (HSMs): CHAPS supports the use of HSMs, which are physical devices that securely generate, store, and manage cryptographic keys. This can provide an additional layer of security, as the keys are never exposed to the operating system or application code.
+
